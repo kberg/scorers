@@ -7,6 +7,7 @@ export class Player {
   animals = [0, 0, 0, 0];
   animalBonuses = [0, 0, 0, 0];
   buildings = [0, 0];
+  extensions = 0;
   total: number;
 
   calculate() : number {
@@ -22,7 +23,7 @@ export class Player {
     this.calculateBonus(this, 1);
     this.calculateBonus(this, 2);
     this.calculateBonus(this, 3);
-    this.total = sum(this.animals) + sum(this.buildings) + sum(this.animalBonuses);
+    this.total = sum(this.animals) + sum(this.buildings) + sum(this.animalBonuses) + (this.extensions * 4);
     return this.total;
   }
 

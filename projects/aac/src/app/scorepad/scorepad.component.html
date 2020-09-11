@@ -35,14 +35,21 @@
       <td>Bonus: {{model.blue.animalBonuses[3]}}</td>
     </tr>
     <tr>
-      <td>Buildings without *</td>
-      <td><input type="number" class="form-control" id="name"  [(ngModel)]="model.red.buildings[0]" name="buildingsa"></td>
+      <td>Completed Farm Extensions</td>
+      <td><input type="number" class="form-control" id="name"  [(ngModel)]="model.red.extensions" name="redextensions"></td>
+      <td></td>
+      <td><input type="number" class="form-control" id="name"  [(ngModel)]="model.blue.extensions" name="blueextensions"></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Points from buildings Buildings without *</td>
+      <td><input type="number" class="form-control" id="name"  [(ngModel)]="model.red.buildings[0]" name="redbuildingsa"></td>
       <td></td>
       <td><input type="number" class="form-control" id="name"  [(ngModel)]="model.blue.buildings[0]" name="bluebuildingsa"></td>
       <td></td>
     </tr>
     <tr>
-      <td>Bulidings with *</td>
+      <td>Points from buildings Buildings without *</td>
       <td><input type="number" class="form-control" id="name"  [(ngModel)]="model.red.buildings[1]" name="redbuildingsb"></td>
       <td></td>
       <td><input type="number" class="form-control" id="name"  [(ngModel)]="model.blue.buildings[1]" name="bluebuildingsb"></td>

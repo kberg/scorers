@@ -19,8 +19,6 @@ export class ScorepadComponent implements OnInit, OnChanges {
   }
 
   ngOnChanges(changes: SimpleChanges): void {
-    console.log("blah");
-    console.log(changes);
     this.model.blue.calculate();
     this.model.red.calculate();
   }
