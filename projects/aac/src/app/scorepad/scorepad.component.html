@@ -1,0 +1,59 @@
+<h2>Scoring for Agricola: All Creatures Big and Small</h2>
+<form #scoreform="ngForm">
+  <table>
+    <tr>
+      <th>&nbsp;</th>
+      <th colspan="2">Red</th>
+      <th colspan="2">Blue</th>
+    </tr>
+    <tr>
+      <td>Sheep</td>
+      <td><input type="number" class="form-control" id="name"  [(ngModel)]="model.red.animals[0]" name="redsheep"></td>
+      <td>Bonus: {{model.red.animalBonuses[0]}}</td>
+      <td><input type="number" class="form-control" id="name"  [(ngModel)]="model.blue.animals[0]" name="bluesheep"></td>
+      <td>Bonus: {{model.blue.animalBonuses[0]}}</td>
+    </tr>
+    <tr>
+      <td>Boars</td>
+      <td><input type="number" class="form-control" id="name"  [(ngModel)]="model.red.animals[1]" name="redboars"></td>
+      <td>Bonus: {{model.red.animalBonuses[1]}}</td>
+      <td><input type="number" class="form-control" id="name"  [(ngModel)]="model.blue.animals[1]" name="blueboars"></td>
+      <td>Bonus: {{model.blue.animalBonuses[1]}}</td>
+    </tr>
+    <tr>
+      <td>Cows</td>
+      <td><input type="number" class="form-control" id="name"  [(ngModel)]="model.red.animals[2]" name="redcows"></td>
+      <td>Bonus: {{model.red.animalBonuses[2]}}</td>
+      <td><input type="number" class="form-control" id="name"  [(ngModel)]="model.blue.animals[2]" name="bluecows"></td>
+      <td>Bonus: {{model.blue.animalBonuses[2]}}</td>
+    </tr>
+    <tr>
+      <td>Horses</td>
+      <td><input type="number" class="form-control" id="name"  [(ngModel)]="model.red.animals[3]" name="redhorses"></td>
+      <td>Bonus: {{model.red.animalBonuses[3]}}</td>
+      <td><input type="number" class="form-control" id="name"  [(ngModel)]="model.blue.animals[3]" name="bluehorses"></td>
+      <td>Bonus: {{model.blue.animalBonuses[3]}}</td>
+    </tr>
+    <tr>
+      <td>Buildings without *</td>
+      <td><input type="number" class="form-control" id="name"  [(ngModel)]="model.red.buildings[0]" name="buildingsa"></td>
+      <td></td>
+      <td><input type="number" class="form-control" id="name"  [(ngModel)]="model.blue.buildings[0]" name="bluebuildingsa"></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bulidings with *</td>
+      <td><input type="number" class="form-control" id="name"  [(ngModel)]="model.red.buildings[1]" name="redbuildingsb"></td>
+      <td></td>
+      <td><input type="number" class="form-control" id="name"  [(ngModel)]="model.blue.buildings[1]" name="bluebuildingsb"></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td></td>
+      <td>{{model.red.calculate()}}</td>
+      <td></td>
+      <td>{{model.blue.calculate()}}</td>
+    </tr>
+  </table>
+</form>
